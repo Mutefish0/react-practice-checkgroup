@@ -1,0 +1,65 @@
+.component-checksubject{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15.5px;
+    margin-bottom:27.5px;
+    .title{
+        margin-bottom: 12.5px;
+        .check-box{
+            margin-right: 12px;
+        }
+        .amount{
+            cursor: pointer;
+            float: right;
+            position: relative;
+            z-index:2;
+            &:hover:after{
+                background-color: darken(#506A76,4%);
+            }
+            &:after{
+                content: '';
+                display: block;
+                height: 28px;
+                width: 48px;
+                z-index:-1;
+                background-color: #506A76;
+                position:absolute;
+                top:-3px;
+                left:-8px;
+                border-radius: 16px;
+            }
+        }
+    }
+    .item{
+        margin-left: 33px;
+    }
+}
+
+.component-checkitem-active{
+    color: lighten(#D0D4D3, 8%);
+}
+
+.component-checkitem{
+    color: #D0D4D3; 
+    font-size: 14px;
+    font-weight: 600;
+    margin: 4px 0;
+    letter-spacing: 0.5px;
+    .check-box{
+        margin-right: 12px;
+    }
+    .amount{
+        float: right;
+        font-size: 16px;
+    }
+}
+
+.component-checkbox{
+    font-size: 22px;
+    width: 22px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    color: #D0D4D3; 
+}

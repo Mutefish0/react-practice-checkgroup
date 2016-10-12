@@ -1,0 +1,28 @@
+.component-checkgroup{
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: inherit | grayscale;
+    > .title{
+        height: 30px;
+        .group-name{
+            font-size: 24px;
+            color: #D7DEE3;
+            line-height: 30px;
+        }
+        .clear-all{
+            color: white;
+            border: none;
+            background: transparent;
+            font-size: 15px;
+            font-weight: bold;
+            float: right;
+            line-height: 30px;
+            cursor: pointer;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            &:hover{
+                color:#D7DEE3;
+            }
+        }
+    }
+}
