@@ -1,3 +1,7 @@
+/**
+ * 主要组件
+ */
+
 import React from 'react'
 
 import Checksubject from './Checksubject'
