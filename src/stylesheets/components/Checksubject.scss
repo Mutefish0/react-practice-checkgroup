@@ -3,11 +3,34 @@
     font-weight: bold;
     font-size: 15px;
     margin-top: 15.5px;
-    margin-bottom:27.5px;
+    margin-bottom:17.5px;
     .title{
         margin-bottom: 12.5px;
         .check-box{
             margin-right: 12px;
+        }
+        .arrow{
+            margin-left: 12px;
+            cursor: pointer;
+            i{
+                font-weight: bolder;
+            }
+        }
+        .arrow-right{
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+        }
+        .arrow-down{
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
         }
         .amount{
             cursor: pointer;
@@ -33,6 +56,21 @@
     }
     .item{
         margin-left: 33px;
+        overflow: hidden;
+    }
+    .item-hide{
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        max-height: 0px;
+        opacity: 0;
+    }
+    .item-show{
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        max-height: 1000px;
+        opacity: 1;
     }
 }
 

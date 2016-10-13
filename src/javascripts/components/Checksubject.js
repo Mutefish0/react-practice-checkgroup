@@ -50,7 +50,8 @@ class Checksubject extends React.Component {
         super(props)
         this.amount = this.props.data.items.reduce((pre, cur) => pre + cur.amount, 0)
         this.state = {
-            checked: this.props.defaultChecked
+            checked: this.props.defaultChecked,
+            spreaded: true
         }   
     }
 
@@ -75,9 +76,12 @@ class Checksubject extends React.Component {
                         <Checkbox checked={this.state.checked} />
                     </span>
                     <span className="subject-name">{ data.subjectName }</span>
+                    <span className="arrow" onClick={() => this.setState({spreaded: !this.state.spreaded})}>
+                        <i className={'fa fa-angle-right '+(this.state.spreaded? 'arrow-down': 'arrow-right')}></i>
+                    </span>
                     <span className="amount">{ this.amount }</span>
                 </div>
-                <div className='item'>
+                <div className={'item '+(this.state.spreaded? 'item-show': 'item-hide')}>
                     { 
                         data.items.map((item, index) =>
                             <Checkitem 
