@@ -104,7 +104,7 @@ let mockData2 = {
     ]
 }
 
-var mockData = mockData1
+var mockData = mockData2
 
 export default function getMockData() {
     mockData = mockData == mockData1? mockData2: mockData1
