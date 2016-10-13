@@ -23,5 +23,5 @@
     3. 静态托管`public`文件夹即可
 
 # Demo
-[在线demo](http://localhost)
+[在线demo](http://demo.yiifan.xyz/checkgroup)
 
